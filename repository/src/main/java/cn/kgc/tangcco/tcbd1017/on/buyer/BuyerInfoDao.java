@@ -19,4 +19,6 @@ public interface BuyerInfoDao {
 	 * @return
 	 */
 	public  int  insertBuyerInfo(Map<String, Object>map) ;
+	
+	public  int  update(Map<String, Object> map);
 }

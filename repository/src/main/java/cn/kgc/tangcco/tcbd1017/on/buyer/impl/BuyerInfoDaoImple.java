@@ -192,40 +192,40 @@ public class BuyerInfoDaoImple implements BuyerInfoDao  {
 	
 	
 	
-	//测试查询
-	public void test() {
-		Map<String, Object> map=new HashMap<String, Object>();
-		map.put("buyer_id", 313 );
-		List<BuyerInfo> list=selectAllBuyerInfosByBuyer_id(map);
-		
-		System.out.println(list);
-		
-	}
-	//测试添加
-	public void test01() {
-		Map<String, Object> map=new HashMap<String, Object>();
-		
-		map.put("buyer_info_id", 5);
-		map.put("buyer_id", 5);
-		map.put("buyer_info_gender", 2);
-		map.put("buyer_info_idcard", "5");
-		map.put("buyer_info_idcard_name", "小潘");
-		map.put("buyer_info_birthday", new  Date());
-		map.put("buyer_info_address", "硅谷");
-		map.put("buyer_info_icon_url","16516" );
-		map.put("buyer_info_create_time", new Date() );
-		map.put("buyer_info_update_time", new Date());
-		map.put("buyer_info_status", 2);
-	
-		int insertBuyerInfo = insertBuyerInfo(map);
-		
-		
-		if(insertBuyerInfo==0) {
-			System.out.println("shibai");
-		}else if(insertBuyerInfo> 0) {
-			System.out.println("成功");
-		}
-	}
+//	//测试查询
+//	public void test() {
+//		Map<String, Object> map=new HashMap<String, Object>();
+//		map.put("buyer_id", 313 );
+//		List<BuyerInfo> list=selectAllBuyerInfosByBuyer_id(map);
+//		
+//		System.out.println(list);
+//		
+//	}
+//	//测试添加
+//	public void test01() {
+//		Map<String, Object> map=new HashMap<String, Object>();
+//		
+//		map.put("buyer_info_id", 5);
+//		map.put("buyer_id", 5);
+//		map.put("buyer_info_gender", 2);
+//		map.put("buyer_info_idcard", "5");
+//		map.put("buyer_info_idcard_name", "小潘");
+//		map.put("buyer_info_birthday", new  Date());
+//		map.put("buyer_info_address", "硅谷");
+//		map.put("buyer_info_icon_url","16516" );
+//		map.put("buyer_info_create_time", new Date() );
+//		map.put("buyer_info_update_time", new Date());
+//		map.put("buyer_info_status", 2);
+//	
+//		int insertBuyerInfo = insertBuyerInfo(map);
+//		
+//		
+//		if(insertBuyerInfo==0) {
+//			System.out.println("shibai");
+//		}else if(insertBuyerInfo> 0) {
+//			System.out.println("成功");
+//		}
+//	}
 }
 
 	
